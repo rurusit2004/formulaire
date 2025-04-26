@@ -2,7 +2,7 @@
 
 ## Installation
 
-1. Clone ce dossier.
+1. Clone ce dossier et change le nom du dossier le surnomer "fiche client"
 2. Installe les dépendances :
    ```
    npm install
