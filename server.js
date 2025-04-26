@@ -56,7 +56,7 @@ app.post('/send', async (req, res) => {
   try {
     await transporter.sendMail({
       from: `"Fiche Client" <${process.env.GMAIL_USER}>`,
-      to: `${process.env.GMAIL_USER}, ${data.email}`,
+      to: [process.env.GMAIL_USER, data.email, data.email2].filter(Boolean).join(','),
       subject: "Nouvelle fiche client",
       html
     });
